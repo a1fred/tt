@@ -19,6 +19,11 @@ DATE                                | SPENT hrs |
 Total 7 hours
 ```
 
+# Installation
+```sh
+$ pip3 install tt_cli
+```
+
 Environment variables
 * TT_DTFORMAT, `%Y-%m-%d %H:%M:%S`
 * TT_FPATH, `~/.tt.csv`

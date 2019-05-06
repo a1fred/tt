@@ -1,5 +1,5 @@
 import argparse
-from tt.commands import COMMANDS
+from tt_cli.commands import COMMANDS
 
 
 def main():
@@ -12,4 +12,7 @@ def main():
     kwargs = vars(parser.parse_args())
     command = kwargs.pop('subparser')
 
-    COMMANDS[command].handle(**kwargs)
+    if command not in COMMANDS:
+        parser.print_usage()
+    else:
+        COMMANDS[command].handle(**kwargs)

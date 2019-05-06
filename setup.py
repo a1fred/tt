@@ -1,18 +1,18 @@
 from setuptools import setup
 
-version = '1.0'
+version = '1.1'
 
 
 setup(
     name='tt_cli',
     version=version,
     packages=[
-        'tt',
-        'tt.commands',
+        'tt_cli',
+        'tt_cli.commands',
     ],
     url='https://github.com/a1fred/tt',
     entry_points={
-        'console_scripts': ['tt=tt.cli:main'],
+        'console_scripts': ['tt=tt_cli.cli:main'],
     },
     license='MIT',
     author='a1fred',

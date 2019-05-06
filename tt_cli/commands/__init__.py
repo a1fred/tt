@@ -1,4 +1,4 @@
-from tt.commands import (
+from tt_cli.commands import (
     add,
     days,
     show,

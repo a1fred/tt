@@ -1,8 +1,8 @@
 import csv
 import datetime
 
-from tt.commands.abc import ABCCommand
-from tt import constants
+from tt_cli.commands.abc import ABCCommand
+from tt_cli import constants
 
 
 class Command(ABCCommand):

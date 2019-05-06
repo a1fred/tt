@@ -1,8 +1,8 @@
 import csv
 
-from tt.commands.abc import ABCCommand
-from tt import constants
-from tt import utils
+from tt_cli.commands.abc import ABCCommand
+from tt_cli import constants
+from tt_cli import utils
 
 
 class Command(ABCCommand):
